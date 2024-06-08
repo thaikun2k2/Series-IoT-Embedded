@@ -1,1 +1,1 @@
-Iam a embeded development
+Iam a IoT application development
