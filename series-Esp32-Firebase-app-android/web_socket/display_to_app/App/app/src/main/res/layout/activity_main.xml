@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="51dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Nhiệt độ"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/tvGetNhietDo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/progressBar1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="35dp"
+                    android:text="0%"
+                    android:textSize="20sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/vie_bg"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/circle1"
+                    tools:progress="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:gravity="center"
+                    android:text="Độ ẩm"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/tvGetDoAm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/progressBar1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="35dp"
+                    android:text="0%"
+                    android:textSize="20sp" />
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="@android:style/Widget.ProgressBar.Large"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/vie_bg"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/circle2"
+                    tools:progress="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Chất Lượng Không Khí"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/tvGetChatLuongKK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/progressBar2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="35dp"
+                    android:text="0"
+                    android:textSize="20sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar3"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/vie_bg"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/circle3"
+                    tools:progress="0" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Quạt làm thoáng không khí"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <ImageView
+                    android:id="@+id/quatkk"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_on"
+                    android:textSize="40dp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/relayOnButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:text="Bật Quạt" />
+            <Button
+                android:id="@+id/relayOffButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:text="Tắt Quạt" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
