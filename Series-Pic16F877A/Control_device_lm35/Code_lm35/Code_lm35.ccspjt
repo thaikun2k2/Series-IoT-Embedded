@@ -1,0 +1,81 @@
+[PROJECT]
+Target=Code_lm35.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.101
+Compiler=PCM
+[Target Data]
+FileList=Code_lm35.c
+[Code_lm35.c]
+Type=4
+[mru-list]
+1=Code_lm35.c
+
+[defines]
+buildcount=23
+
+[ProjectLog]
+Days=5
+D1=22-12-2022
+D1_L=3
+D1_L1=[57029]Project Closed.
+D1_L2=[57037]Project Opened.
+D1_L3=[57048]Project Closed.
+D2=03-01-2023
+D2_L=4
+D2_L1=[37799]Project Opened.
+D2_L2=[37825]Started Editing.
+D2_L3=[37853]Stopped Editing.
+TotalEdit=9
+TotalDebug=0
+D2_E=1
+D2_D=0
+D2_L4=[37853]Project Closed.
+D3=07-01-2023
+D3_L=6
+D3_L1=[67201]Project Opened.
+D3_L2=[67230]Started Editing.
+D3_L3=[67530]Stopped Editing.
+D3_L4=[67808]Started Editing.
+D3_L5=[68116]Stopped Editing.
+D3_E=1
+D3_D=0
+D3_L6=[68292]Project Closed.
+D4=10-01-2023
+D4_L=6
+D4_L1=[49101]Project Opened.
+D4_L2=[49111]Project Closed.
+D4_L3=[78706]Project Opened.
+D4_L4=[78751]Started Editing.
+D4_L5=[78801]Stopped Editing.
+D4_E=1
+D4_D=0
+D4_L6=[78801]Project Closed.
+D5=11-01-2023
+D5_L=14
+D5_L1=[47178]Project Opened.
+D5_L2=[47187]Project Closed.
+D5_L3=[49697]Project Opened.
+D5_L4=[49706]Started Editing.
+D5_L5=[50268]Stopped Editing.
+D5_L6=[52044]Started Editing.
+D5_L7=[52345]Stopped Editing.
+D5_L8=[52684]Started Editing.
+D5_L9=[53008]Stopped Editing.
+D5_L10=[53030]Started Editing.
+D5_L11=[53331]Stopped Editing.
+D5_L12=[53631]Started Editing.
+D5_L13=[53952]Stopped Editing.
+D5_E=6
+D5_D=0
+D5_L14=[54217]Project Closed.
+
+[fileformats]
+forcecoff=0
+
+[Opened Files]
+1=Code_lm35.c
+t1=101
+Count=1
+[Units]
+Count=1
+1=Code_lm35 (main)
